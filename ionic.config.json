@@ -1,0 +1,7 @@
+{
+  "name": "proyectoPlataformas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
