@@ -1,3 +1,26 @@
-<p>
-  productos works!
-</p>
+<div class="card-container">
+  <ng-container *ngIf="productos && productos.length">
+    <ng-container *ngFor="let producto of productos">
+      <div *ngIf="producto.disponible" class="card">
+        <img [src]="producto.imagen" alt="{{producto.nombre}}" class="product-image">
+        <h2><strong>{{producto.nombre}}</strong></h2>
+        <p style="color: gray;">{{producto.descripcion}}</p>
+        <p style="color: gray;">Color: {{producto.color}}</p>
+        <p><strong>$ {{producto.precio}}</strong></p>
+        <div class="card-container">
+          <div class="row">
+            <div class="col-10">
+              <button class="btn btn-outline-primary boton-agregar" type="button">
+                Agregar al Carrito
+              </button>
+            </div>
+            <div class="col-2"><button type="button" class="btn btn-outline-primary"><i
+                  class="fa-solid fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

@@ -1,11 +1,14 @@
-export interface producto{
+export interface producto {
     id: number;
     nombre: string;
-    descripcion :string;
-    oferta:boolean,
-    descBool:boolean
+    descripcion: string;
+    color: string;
     precio: number;
-    imagen:string;
-    disponibilidad:boolean;
-    cantidad?:number;   
+    imagen: string;
+    disponible: boolean;
+    cantidad?: number;
+    categoria?: string;
+    marca?: string;
+    oferta?: boolean;
+    descBool?: boolean;
 }
